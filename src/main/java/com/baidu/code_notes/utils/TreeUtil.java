@@ -1,4 +1,4 @@
-package com.baidu.code_notes.util;
+package com.baidu.code_notes.utils;
 
 import java.util.ArrayList;
 import java.util.List;
