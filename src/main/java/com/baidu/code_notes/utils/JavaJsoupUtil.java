@@ -1,7 +1,9 @@
 package com.baidu.code_notes.utils;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -173,6 +175,8 @@ public class JavaJsoupUtil {
      * @date 2023/2/11 20:20
      */
     @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class SysCitys {
 
         private String id;
@@ -182,6 +186,18 @@ public class JavaJsoupUtil {
         private String level;
         private String fullName;
         private String pinyin;
+        private String longitude;//经度
+        private String latitude;//维度
+
+        public SysCitys(String id, String name, String pid, String pids, String level, String fullName, String pinyin) {
+            this.id = id;
+            this.name = name;
+            this.pid = pid;
+            this.pids = pids;
+            this.level = level;
+            this.fullName = fullName;
+            this.pinyin = pinyin;
+        }
     }
 
 }
