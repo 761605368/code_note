@@ -11,3 +11,4 @@
 3.[省市区三级行政区域.sql](https://github.com/761605368/code_notes/blob/master/src/main/resources/static/省市区三级行政区域.sql)  
 4.[省市区三级行政区域(包含经纬度).sql](https://github.com/761605368/code_notes/blob/master/src/main/resources/static/省市区三级行政区域(包含经纬度).sql)  
 5.[java高德地区获取经纬度](https://github.com/761605368/code_notes/blob/master/src/main/java/com/baidu/code_notes/utils/MapUtil.java)    
+6.[chrome浏览器插件](https://github.com/761605368/code_notes/blob/master/src/main/resources/static/chrome_plug)  
