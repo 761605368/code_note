@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "CSDN复制限制去除",
 	"version": "1.0",
 	"description": "CSDN复制限制去除",
@@ -9,22 +9,42 @@
 		"48": "icon.png",
 		"128": "icon.png"
 	},
-	"browser_action":
-	{
-		"default_icon": "icon.png",
-		"default_popup": "popup.html"
-	},
+
 	"content_scripts":
 	[
 		{
 			"matches": ["https://blog.csdn.net/*"],
 			"js": ["js/content-script.js"]
+			// 代码注入的时间，可选值：run_at: "document_start", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle
 		}
 	],
 
-	"permissions":
-	[
-		"storage"
+	"background": {
+		"service_worker": "js/background.js"
+	},
+	"permissions": ["<all_urls>",
+		"scripting", "activeTab", "storage"
 
-	]
+	],
+
+	"action": {
+		"default_popup": "popup.html"
+	},
+
+	"commands": {
+		"removal_restriction": {
+			"suggested_key": {
+				"default": "Alt+V",
+				"mac": "Alt+V"
+			},
+			"description": "注入CSDN复制限制去除的代码"
+		},
+		"on_off": {
+			"suggested_key": {
+				"default": "Alt+B",
+				"mac": "Alt+B"
+			},
+			"description": "开/关"
+		}
+	}
 }
