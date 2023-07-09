@@ -34,9 +34,9 @@ public class RedissonTest {
     @SneakyThrows
     public void machineOne() {
 
+        // 尝试获取锁
         RLock lock = redissonClient.getLock("redissonTest");
 
-        // 尝试获取锁
         log.info("尝试获取锁");
         lock.lock();
         log.info("获取锁成功");
@@ -54,9 +54,9 @@ public class RedissonTest {
     @SneakyThrows
     public void machineTwo(){
 
+        // 尝试获取锁
         RLock lock = redissonClient.getLock("redissonTest");
 
-        // 尝试获取锁
         log.info("尝试获取锁");
         lock.lock();
         log.info("获取锁成功");

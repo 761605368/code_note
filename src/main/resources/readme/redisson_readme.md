@@ -30,9 +30,9 @@ spring:
     @SneakyThrows
     public void machineOne() {
 
-        RLock lock = redissonClient.getLock("redissonTest");
-
         // 尝试获取锁
+        RLock lock = redissonClient.getLock("redissonTest");
+        
         log.info("尝试获取锁");
         lock.lock();
         log.info("获取锁成功");
@@ -50,9 +50,9 @@ spring:
     @SneakyThrows
     public void machineTwo(){
 
+        // 尝试获取锁
         RLock lock = redissonClient.getLock("redissonTest");
 
-        // 尝试获取锁
         log.info("尝试获取锁");
         lock.lock();
         log.info("获取锁成功");
