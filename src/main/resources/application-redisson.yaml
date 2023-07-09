@@ -1,10 +1,4 @@
-server:
-  port: 8081
 spring:
-  profiles:
-    active: kafka
-
-
   redis:
     host: ${redis.host}
     password: ${redis.password}
