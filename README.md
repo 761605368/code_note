@@ -13,6 +13,8 @@
 5.[java高德地区获取经纬度](https://github.com/761605368/code_notes/blob/master/src/main/java/com/baidu/code_notes/utils/MapUtil.java)    
 6.[chrome浏览器插件](https://github.com/761605368/code_notes/blob/master/src/main/resources/chrome_plug)  
 
-二、[kafka_springboot](https://github.com/761605368/code_notes/blob/master/src/main/resources/readme/kafka_readme.md)
+[kafka_springboot](https://github.com/761605368/code_notes/blob/master/src/main/resources/readme/kafka_readme.md)
 
-三、[redisson_springboot](https://github.com/761605368/code_notes/blob/master/src/main/resources/readme/redisson_readme.md)
+[redisson_springboot](https://github.com/761605368/code_notes/blob/master/src/main/resources/readme/redisson_readme.md)
+
+[redis_springboot](https://github.com/761605368/code_notes/blob/master/src/main/resources/readme/redis_readme.md)
